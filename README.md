@@ -344,4 +344,4 @@ authors for their contributions to the community!
 ---
 
 > 📬 **Contact**: For questions or collaboration, please reach out via
-> GitHub Issues or email (linxinkui@iie.ac.cn).
+> GitHub Issues or email (linxinkui@iie.ac.cn or yifanwang993w@gmail.com).
