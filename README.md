@@ -165,6 +165,11 @@ done
 The **`REL/`** directory contains the locator **training**, **inference**,
 and **deployment** code.
 
+> 📦 **Note**: Before training, please unzip the `data.zip` archives inside
+> [`REL/EasyR1-main/`](REL/EasyR1-main/) and
+> [`REL/LlamaFactory-main/`](REL/LlamaFactory-main/) — the training data
+> (SFT / RL) is contained in them.
+
 ### 🏋️ Training the Locator
 
 The locator is trained in two stages (Fig. 2, §3.5). We provide ready-to-use
