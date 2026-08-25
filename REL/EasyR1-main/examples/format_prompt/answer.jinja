@@ -1,0 +1,23 @@
+{{ content | trim }}
+
+You should first think internally about the problem.
+
+Your output MUST strictly follow the format below:
+
+<reason>
+Your reasoning process here.
+</reason>
+
+<id>
+Most relevant document IDs
+</id>
+
+<answer>
+Final answer to the question.
+</answer>
+
+Requirements:
+- All three tags <reason>, <id>, <answer> MUST be present.
+- Do NOT output anything outside these tags.
+- The IDs inside <id> must exactly match the most relevant document IDs.
+- If there are multiple IDs, separate them with commas.

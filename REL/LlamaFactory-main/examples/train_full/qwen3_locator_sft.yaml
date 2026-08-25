@@ -1,0 +1,41 @@
+### model
+model_name_or_path: Qwen3-8B_path
+trust_remote_code: true
+use_v1_kernels: false
+
+
+### method
+stage: sft
+do_train: true
+finetuning_type: full
+deepspeed: examples/deepspeed/ds_z2_config.json
+
+### dataset 
+dataset: locator_sft_data
+template: qwen3
+cutoff_len: 32768
+max_samples: 1000
+overwrite_cache: true
+preprocessing_num_workers: 16
+dataloader_num_workers: 4
+packing: false
+group_by_length: false
+
+### output
+output_dir: saves/qwen3-8b/full/sft_locator
+logging_steps: 1
+save_steps: 500
+plot_loss: true
+overwrite_output_dir: true
+report_to: none
+
+### train
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 4
+learning_rate: 1.0e-4
+num_train_epochs: 5.0
+lr_scheduler_type: cosine
+warmup_ratio: 0.1
+bf16: true
+ddp_timeout: 180000000
+gradient_checkpointing: true
